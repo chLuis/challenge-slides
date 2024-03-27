@@ -1,112 +1,38 @@
 import Image from "next/image";
+import ButtonGetStarted from "@/components/ButtonGetStarted";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="flex gap-0 sm:gap-2 flex-col items-center p-2 sm:p-6 sm:max-w-[1440px] mx-auto animate-fadein duration-200">
+      <div className="flex justify-end items-end w-full">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.5 10C23.6536 10 33 10 33 10M7 19.75H33M13.5 29.5H33" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+      </div>
+      <section className="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <article className="flex flex-col sm:w-[594px] sm:h-72 gap-2 sm:gap-8">
+        <header>
+          <h4 className="uppercase px-[2px] py-[6px] font-normal text-sm leading-5 tracking-widest text-center sm:text-start">ABOUT—PERSONAL</h4>
+          <h2 className="text-3xl sm:text-5xl text-center sm:text-start"><span className="font-normal">¡Hello! </span><span className="font-semibold">{"I'm Angela Smith"}</span></h2>
+        </header>
+        <p className="font-light text-pretty pe-2 line-clamp-2 truncate sm:line-clamp-none overflow-clip sm:max-w-full text-center sm:text-start mx-auto">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt<span className="hidden sm:inline"> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></p>
+        <div className="hidden sm:inline w-40 min-w-40 max-w-40">
+          <ButtonGetStarted />
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        
+      </article>
+      <article className="max-w-[320px] sm:max-w-full">
+        <Image src="/images/image-slides.webp" alt="images slides" width={680} height={800} />
+      </article>
+      <div className="sm:hidden w-full max-w-[370px] mx-10">
+          <ButtonGetStarted />
+        </div>
+      </section>
+      <div className="mt-2 sm:mt-0 scale-75 sm:scale-100">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M26.1161 23.8839C26.6043 24.372 27.3957 24.372 27.8839 23.8839C28.372 23.3957 28.372 22.6043 27.8839 22.1161L26.1161 23.8839ZM20 16L20.8839 15.1161C20.3957 14.6279 19.6043 14.6279 19.1161 15.1161L20 16ZM12.1161 22.1161C11.628 22.6043 11.628 23.3957 12.1161 23.8839C12.6043 24.372 13.3957 24.372 13.8839 23.8839L12.1161 22.1161ZM34.75 20C34.75 28.1462 28.1462 34.75 20 34.75V37.25C29.5269 37.25 37.25 29.5269 37.25 20H34.75ZM20 34.75C11.8538 34.75 5.25 28.1462 5.25 20H2.75C2.75 29.5269 10.4731 37.25 20 37.25V34.75ZM5.25 20C5.25 11.8538 11.8538 5.25 20 5.25V2.75C10.4731 2.75 2.75 10.4731 2.75 20H5.25ZM20 5.25C28.1462 5.25 34.75 11.8538 34.75 20H37.25C37.25 10.4731 29.5269 2.75 20 2.75V5.25ZM27.8839 22.1161L20.8839 15.1161L19.1161 16.8839L26.1161 23.8839L27.8839 22.1161ZM19.1161 15.1161L12.1161 22.1161L13.8839 23.8839L20.8839 16.8839L19.1161 15.1161Z" fill="black"/>
+        </svg>
       </div>
     </main>
   );
