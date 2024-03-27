@@ -22,7 +22,7 @@ export default function Home() {
                 </svg>
             </div>
             <section className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <article className="flex flex-col sm:w-[594px] sm:h-72 gap-2 sm:gap-8">
+                <article className="flex flex-col sm:w-[594px] gap-2 sm:gap-8">
                     <header>
                         <h4 className="uppercase px-[2px] py-[6px] font-normal text-sm leading-5 tracking-widest text-center sm:text-start">
                             ABOUT—PERSONAL
